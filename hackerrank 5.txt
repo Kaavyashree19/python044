@@ -1,0 +1,16 @@
+FIND THE RUNNER-UP SCORE:
+
+n = int(input())  # Number of participants (not really needed in the solution)
+scores = list(map(int, input().split()))  # List of scores
+
+# Convert the list to a set to get unique scores
+unique_scores = list(set(scores))
+
+# Sort the unique scores in descending order
+unique_scores.sort(reverse=True)
+
+# The second element in the sorted list is the runner-up score
+runner_up = unique_scores[1]
+
+# Print the runner-up score
+print(runner_up)
